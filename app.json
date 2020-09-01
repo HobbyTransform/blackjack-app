@@ -1,0 +1,7 @@
+{
+  "name": "blackjack app",
+  "description": "a simple blackjack app built with javascript",
+  "repository": "https://github.com/HobbyTransform/blackjack-app",
+  "logo": "",
+  "keywords": ["JavaScript", "Blackjack"]
+}
