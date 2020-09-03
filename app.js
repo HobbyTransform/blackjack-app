@@ -1,4 +1,5 @@
 // create an express app
+var PORT = process.env.PORT || 3000;
 const express = require("express")
 const app = express()
 
@@ -7,11 +8,11 @@ app.use(express.static("static"))
 
 // define the first route
 app.get("/", function (req, res) {
-  res.send("<h1>Hello World!</h1>")
+  res.send("<h1>Success!</h1>")
 })
 
 // start the server listening for requests
-var server = app.listen(process.env.PORT || 3000, () => {
-	var port = server.address().port;
-	console.log("App now running on port", port);
+var server = app.listen(PORT, () => {
+	//var port = server.address().port;
+	console.log("App now running on port", PORT);
 });
