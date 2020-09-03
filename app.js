@@ -7,7 +7,7 @@ const app = express()
 app.use(express.static("static"))
 
 // define the first route
-app.get("/", function (req, res) {
+app.get("/status", function (req, res) {
   res.send("<h1>Success!</h1>")
 })
 
